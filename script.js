@@ -1,55 +1,51 @@
 const gameStages = {
     start: {
-        text: "You stand before an ancient, mysterious forest. Do you enter or turn back?",
+        text: "You find yourself at the entrance of a forgotten temple deep within the jungle. Do you dare to step inside or retreat?",
         choices: [
-            { text: "Enter the forest", consequence: "forestPath" },
-            { text: "Turn back", consequence: "endingCoward" }
+            { text: "Enter the temple", consequence: "templeHall" },
+            { text: "Retreat to the jungle", consequence: "endingRetreat" }
         ],
-        image: "images/forest.jpg"
+        image: "https://images.pexels.com/photos/277663/pexels-photo-277663.jpeg"
     },
-    forestPath: {
-        text: "You encounter a fork in the path. Do you go left towards a glowing light or right into the dark shadows?",
+    templeHall: {
+        text: "The air is thick, and the walls are adorned with ancient carvings. You see two paths ahead: one leads down a dark staircase, and the other into a dimly lit hall. Which path do you take?",
         choices: [
-            { text: "Go left", consequence: "glowPath" },
-            { text: "Go right", consequence: "shadowPath" }
+            { text: "Descend the dark staircase", consequence: "darkStaircase" },
+            { text: "Enter the dimly lit hall", consequence: "litHall" }
         ],
-        image: "images/fork.jpg"
+        image: "https://images.pexels.com/photos/2372858/pexels-photo-2372858.jpeg"
     },
-    glowPath: {
-        text: "You discover a glowing gem on the ground. Do you pick it up or leave it?",
+    darkStaircase: {
+        text: "You find an ancient chest at the bottom of the stairs. It’s locked. Do you try to open it or return upstairs?",
         choices: [
-            { text: "Pick up the gem", consequence: "endingGem" },
-            { text: "Leave it", consequence: "endingNoGem" }
+            { text: "Open the chest", consequence: "endingTreasure" },
+            { text: "Return upstairs", consequence: "templeHall" }
         ],
-        image: "images/gem.jpg"
+        image: "https://images.pexels.com/photos/280235/pexels-photo-280235.jpeg"
     },
-    shadowPath: {
-        text: "You are surrounded by dark shadows, and you see red eyes staring at you. Do you run or confront them?",
+    litHall: {
+        text: "A serpent statue stands before you, its eyes glowing faintly. It almost seems alive. Do you approach or keep your distance?",
         choices: [
-            { text: "Run away", consequence: "endingRun" },
-            { text: "Confront the shadows", consequence: "endingConfront" }
+            { text: "Approach the statue", consequence: "endingStatue" },
+            { text: "Keep your distance", consequence: "endingEscape" }
         ],
-        image: "images/shadows.jpg"
+        image: "https://images.pexels.com/photos/1485548/pexels-photo-1485548.jpeg"
     },
-    endingCoward: {
-        text: "You turned back, never knowing what wonders or dangers lay ahead. The adventure ends here.",
-        image: "images/coward.jpg"
+    endingRetreat: {
+        text: "You turn back, deciding the mysteries of the temple are not for you. Sometimes, caution is the wisest choice.",
+        image: "https://images.pexels.com/photos/15286/pexels-photo.jpg"
     },
-    endingGem: {
-        text: "The gem glows brightly, revealing a hidden treasure. You found great fortune!",
-        image: "images/treasure.jpg"
+    endingTreasure: {
+        text: "The chest opens, revealing a treasure trove of gold and jewels. Congratulations, adventurer! You've found the Lost Treasure.",
+        image: "https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg"
     },
-    endingNoGem: {
-        text: "You walk away, but you hear mysterious sounds in the distance. Perhaps there's more to explore.",
-        image: "images/forestPath.jpg"
+    endingStatue: {
+        text: "The statue’s eyes glow brighter, and you are suddenly paralyzed. The temple claims another soul. Perhaps next time, caution will prevail.",
+        image: "https://images.pexels.com/photos/315644/pexels-photo-315644.jpeg"
     },
-    endingRun: {
-        text: "You run as fast as you can, barely escaping the shadows. You're safe, but the adventure remains unsolved.",
-        image: "images/run.jpg"
-    },
-    endingConfront: {
-        text: "You confront the shadows, and they vanish, revealing a path to a hidden kingdom. You are a true adventurer!",
-        image: "images/kingdom.jpg"
+    endingEscape: {
+        text: "You manage to escape the hall, feeling a cold presence watching you. The adventure isn't over, but you live to fight another day.",
+        image: "https://images.pexels.com/photos/3727186/pexels-photo-3727186.jpeg"
     }
 };
 
