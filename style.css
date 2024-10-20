@@ -5,21 +5,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0; 
+    margin: 0;
 }
 
 .game-container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
-    color: #ff4081;
-    font-size: 2.5em;
+    background: -webkit-linear-gradient(#ff4081, #ffeb3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -34,26 +37,19 @@ p {
 }
 
 .choice {
-    background: none;
+    background-color: #ff4081; /* Pink */
+    color: white;
     border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
     cursor: pointer;
-    outline: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.choice img {
-    width: 100px;
-    height: 100px;
-    transition: transform 0.3s ease;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .choice:hover {
+    background-color: #e91e63; /* Darker Pink */
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
-}
-
-.choice:active img {
-    transform: scale(0.9);
 }
 
 .result {
@@ -64,7 +60,7 @@ p {
 
 #message {
     font-weight: bold;
-    color: #f44336;
+    color: #f44336; /* Red for message */
 }
 
 #user-choice {
@@ -73,16 +69,6 @@ p {
 
 #computer-choice {
     color: #f44336; /* Red for computer choice */
-}
-
-footer {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #555;
-}
-
-footer p {
-    margin: 0;
 }
 
 #restart {
@@ -98,4 +84,14 @@ footer p {
 
 #restart:hover {
     background-color: #e91e63; /* Darker pink */
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+footer p {
+    margin: 0;
 }
