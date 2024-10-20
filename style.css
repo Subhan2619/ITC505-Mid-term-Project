@@ -1,0 +1,38 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2b2b2b; /* Dark background for adventure feel */
+    color: #e0e0d1; /* Light text for readability */
+    text-align: center;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #1a1a1a; /* Darker header and footer */
+    color: #f4c542; /* Golden yellow for an adventurous touch */
+    padding: 10px;
+}
+
+#story, #choices, #image {
+    margin: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4a7023; /* Forest green for a natural, adventurous feel */
+    color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2f4b15; /* Darker shade on hover */
+}
+
+img {
+    width: 60%; /* Adjust size to fit the page */
+    border: 3px solid #f4c542; /* Golden border to highlight images */
+    border-radius: 10px;
+}
