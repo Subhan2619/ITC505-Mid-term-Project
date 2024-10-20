@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors Game</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Rock, Paper, Scissors</h1>
-        <p>Challenge the computer and see who wins!</p>
+        <p>Challenge yourself against the computer!</p>
     </header>
     <main>
-        <div id="game">
-            <div id="choices">
-                <button onclick="playGame('rock')" class="choice-btn rock-btn">
-                    <i class="fas fa-hand-rock"></i>
+        <div id="game-container">
+            <div class="choice-container">
+                <button class="choice-btn rock-btn" onclick="playGame('rock')">
+                    <img src="https://images.pexels.com/photos/1567590/pexels-photo-1567590.jpeg" alt="Rock">
                     <span>Rock</span>
                 </button>
-                <button onclick="playGame('paper')" class="choice-btn paper-btn">
-                    <i class="fas fa-hand-paper"></i>
+                <button class="choice-btn paper-btn" onclick="playGame('paper')">
+                    <img src="https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg" alt="Paper">
                     <span>Paper</span>
                 </button>
-                <button onclick="playGame('scissors')" class="choice-btn scissors-btn">
-                    <i class="fas fa-hand-scissors"></i>
+                <button class="choice-btn scissors-btn" onclick="playGame('scissors')">
+                    <img src="https://images.pexels.com/photos/1704146/pexels-photo-1704146.jpeg" alt="Scissors">
                     <span>Scissors</span>
                 </button>
             </div>
-            <div id="result"></div>
-            <div id="image"></div>
+            <div id="result">
+                <p>Make your move to start the game!</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -38,8 +38,8 @@
     </footer>
     <script src="script.js"></script>
     <script type="text/javascript">
-         var x = document.lastModified;
-         document.getElementById('lastModified').textContent = x;
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
     </script>
 </body>
 </html>
