@@ -1,38 +1,54 @@
 body {
-    font-family: 'Georgia', serif;
-    background-color: #2b2b2b; /* Dark background for adventure feel */
-    color: #e0e0d1; /* Light text for readability */
+    font-family: 'Roboto', sans-serif;
+    background-image: url('dark-forest-bg.jpg'); /* dark, atmospheric forest image */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #eceff1; /* Light grey for contrast */
     text-align: center;
     padding: 20px;
 }
 
 header, footer {
-    background-color: #1a1a1a; /* Darker header and footer */
-    color: #f4c542; /* Golden yellow for an adventurous touch */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #d4af37; /* Golden color for a regal, adventurous look */
     padding: 10px;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 #story, #choices, #image {
     margin: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #4a7023; /* Forest green for a natural, adventurous feel */
+    background-color: #3e2723; /* Dark reddish-brown for a medieval feel */
     color: #fff;
-    border: 2px solid #333;
+    border: 2px solid #d4af37; /* Gold border */
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-family: 'Cinzel', serif;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #2f4b15; /* Darker shade on hover */
+    background-color: #6d4c41; /* Lighter shade for hover effect */
+    transform: scale(1.05);
 }
 
 img {
-    width: 60%; /* Adjust size to fit the page */
-    border: 3px solid #f4c542; /* Golden border to highlight images */
+    width: 80%; /* Adjust size to fit the page */
+    border: 4px solid #d4af37; /* Golden border to highlight images */
     border-radius: 10px;
+    margin-top: 15px;
 }
