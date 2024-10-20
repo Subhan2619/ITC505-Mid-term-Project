@@ -1,6 +1,7 @@
 const choices = document.querySelectorAll('.choice');
 const result = document.getElementById('result');
 const score = document.getElementById('score');
+const resetButton = document.getElementById('resetButton');
 let playerScore = 0;
 let computerScore = 0;
 
@@ -8,14 +9,16 @@ choices.forEach(choice => {
     choice.addEventListener('click', playGame);
 });
 
+resetButton.addEventListener('click', resetGame);
+
 function playGame(e) {
-    const playerChoice = e.target.id;
-    const computerChoice = getComputerChoice();
+    const playerChoice = e.target.closest('.choice').id;
+    const computerChoice = getRandomComputerChoice();
     const winner = getWinner(playerChoice, computerChoice);
     showResult(winner, computerChoice);
 }
 
-function getComputerChoice() {
+function getRandomComputerChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomIndex = Math.floor(Math.random() * 3);
     return choices[randomIndex];
@@ -46,6 +49,14 @@ function showResult(winner, computerChoice) {
         result.innerHTML = `It's a draw! Computer chose ${computerChoice}.`;
         result.style.color = 'blue';
     }
+    score.innerHTML = `Player: ${playerScore} - Computer: ${computerScore}`;
+}
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    result.innerHTML = 'Choose your move!';
+    result.style.color = '#333';
     score.innerHTML = `Player: ${playerScore} - Computer: ${computerScore}`;
 }
 
