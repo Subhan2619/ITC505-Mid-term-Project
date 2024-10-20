@@ -1,8 +1,8 @@
 const choices = ["rock", "paper", "scissors"];
 const images = {
-    rock: "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg",
-    paper: "https://images.pexels.com/photos/315938/pexels-photo-315938.jpeg",
-    scissors: "https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg"
+    rock: "https://images.pexels.com/photos/1567590/pexels-photo-1567590.jpeg",
+    paper: "https://images.pexels.com/photos/933255/pexels-photo-933255.jpeg",
+    scissors: "https://images.pexels.com/photos/1704146/pexels-photo-1704146.jpeg"
 };
 
 function playGame(playerChoice) {
