@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legend of the Lost Treasure</title>
+    <title>Rock, Paper, Scissors Game</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Legend of the Lost Treasure</h1>
+        <h1>Rock, Paper, Scissors</h1>
     </header>
     <main>
-        <div id="story"></div>
-        <div id="choices"></div>
-        <div id="image"></div>
+        <div id="game">
+            <p>Choose your move:</p>
+            <div id="choices">
+                <button onclick="playGame('rock')">Rock</button>
+                <button onclick="playGame('paper')">Paper</button>
+                <button onclick="playGame('scissors')">Scissors</button>
+            </div>
+            <div id="result"></div>
+            <div id="image"></div>
+        </div>
     </main>
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
